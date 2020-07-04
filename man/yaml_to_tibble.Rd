@@ -9,6 +9,9 @@ yaml_to_tibble(file)
 \arguments{
 \item{file}{File to be converted}
 }
+\value{
+a [tibble][tibble::tibble-package]
+}
 \description{
 yaml_to_tibble
 }
