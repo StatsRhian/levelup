@@ -1,5 +1,6 @@
 #' import_cpd
 #' @importFrom dplyr mutate select
+#' @importFrom glue glue
 #' @importFrom purrr map
 #' @importFrom tibble tibble
 #' @importFrom tidyr unnest
@@ -13,7 +14,7 @@ import_cpd = function(path =  "."){
 
   df =
     df %>%
-    mutate(data = purrr::map(.x = filename, ~yaml_to_tibble(file = glue("{path}/{.x}")))) %>%
+    mutate(data = purrr::map(.x = filename, ~yaml_to_tibble(file = glue::glue("{path}/{.x}")))) %>%
     select(-filename) %>%
     unnest(cols = c(.data$data))
   return(df)
