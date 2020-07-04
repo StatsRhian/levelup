@@ -4,7 +4,7 @@
 \alias{import_cpd}
 \title{import_cpd}
 \usage{
-import_cpd(path)
+import_cpd(path = ".")
 }
 \arguments{
 \item{path}{Path to CPD records}

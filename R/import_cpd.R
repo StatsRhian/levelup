@@ -1,10 +1,11 @@
 #' import_cpd
 #' @importFrom dplyr mutate select
-#' @impotFrom purrr map
+#' @importFrom purrr map
 #' @importFrom tibble tibble
 #' @importFrom tidyr unnest
 #' @param path Path to CPD records
 #' @return a [tibble][tibble::tibble-package]
+#' @export
 import_cpd = function(path =  "."){
   filename = list.files(path = path, pattern = "*.md", recursive = TRUE)
   df = tibble(filename = filename)
