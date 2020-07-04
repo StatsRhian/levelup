@@ -1,13 +1,16 @@
 Package: levelup
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Create and report on CPD
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: 
+    person(given = "Rhian",
+           family = "Davies",
+           role = c("aut", "cre"),
+           email = "rhian@jumpingrivers.com")
+Description: Tools for creating, analysing and reporting on CPD activities.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/trianglegirl/levelup
 BugReports: https://github.com/trianglegirl/levelup/issues
+RoxygenNote: 7.1.1
