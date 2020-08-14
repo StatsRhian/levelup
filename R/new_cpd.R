@@ -37,13 +37,27 @@ new_cpd = function(title = "", type = "other", date = today(),
            benefit_to_practice = "Review needed",
            benefit_to_users = "Review needed"
     )
-  year = year(start_date)
-  nice_title = str_replace_all(str_to_lower(title), "\\s", "-")
-  file = glue("{path}/{year}/{start_date}_{nice_title}.yaml")
+  file = glue("{path}/{year(start_date)}/{start_date}_{title_to_file(title)}.yaml")
 
   if (file.exists(file) & overwrite == FALSE) {
   stop("File exists. Do you want overwrite = TRUE?")
   } else {
   write_yaml(new, file = file)
   }
+}
+
+
+#' title to file
+#' @import stringr
+#' @param string Activity title to be tidied
+#' @return Tidy version of activity title
+
+title_to_file = function(title){
+  title %>%
+    str_squish() %>%
+    str_to_lower() %>%
+    str_replace_all("\\&", "and") %>%
+    str_replace_all("\\+", "and") %>%
+    str_remove_all("[^\\w\\s]") %>%
+    str_replace_all("\\s", "-")
 }
