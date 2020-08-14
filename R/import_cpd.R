@@ -9,7 +9,7 @@
 #' @return a [tibble][tibble::tibble-package]
 #' @export
 import_cpd = function(path =  "."){
-  filename = list.files(path = path, pattern = "*.md", recursive = TRUE)
+  filename = list.files(path = path, pattern = "*.[yaml|yml]$", recursive = TRUE)
   df = tibble(filename = filename)
 
   df =

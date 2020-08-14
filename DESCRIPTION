@@ -1,7 +1,7 @@
 Type: Package
 Package: levelup
 Title: Create and report on CPD
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Rhian",
            family = "Davies",
@@ -15,6 +15,7 @@ BugReports: https://github.com/trianglegirl/levelup/issues
 Imports: 
     dplyr,
     glue,
+    lubridate,
     magrittr,
     purrr,
     rlang,

@@ -5,3 +5,5 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^\.httr-oauth$
+^pkg-thoughts.md$
