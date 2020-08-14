@@ -120,7 +120,14 @@
     <p>import_cpd</p>
     </div>
 
-    <pre class="usage"><span class='fu'>new_cpd</span>(<span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"other"</span>, <span class='kw'>date</span> <span class='kw'>=</span> <span class='fu'>today</span>(), <span class='kw'>learning_hours</span> <span class='kw'>=</span> <span class='fl'>0</span>)</pre>
+    <pre class="usage"><span class='fu'>new_cpd</span>(
+  <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"other"</span>,
+  <span class='kw'>date</span> <span class='kw'>=</span> <span class='fu'>today</span>(),
+  <span class='kw'>learning_hours</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>path</span> <span class='kw'>=</span> <span class='st'>"cpd-records"</span>,
+  <span class='kw'>overwrite</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -139,7 +146,15 @@
     </tr>
     <tr>
       <th>learning_hours</th>
-      <td><p>The number of learning hours accruded during this activity</p></td>
+      <td><p>The number of learning hours acruded during this activity</p></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td><p>Path to CPD records</p></td>
+    </tr>
+    <tr>
+      <th>overwrite</th>
+      <td><p>Should the YAML be overwritten if it exists - default FALSE</p></td>
     </tr>
     </table>
 
