@@ -49,7 +49,7 @@ new_cpd = function(title = "", type = "other", date = today(),
 
 #' title to file
 #' @import stringr
-#' @param string Activity title to be tidied
+#' @param title Activity title to be tidied
 #' @return Tidy version of activity title
 
 title_to_file = function(title){

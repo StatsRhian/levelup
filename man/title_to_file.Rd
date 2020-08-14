@@ -7,7 +7,7 @@
 title_to_file(title)
 }
 \arguments{
-\item{string}{Activity title to be tidied}
+\item{title}{Activity title to be tidied}
 }
 \value{
 Tidy version of activity title
