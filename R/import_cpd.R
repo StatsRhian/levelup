@@ -8,7 +8,7 @@
 #' @param path Path to CPD records
 #' @return a [tibble][tibble::tibble-package]
 #' @export
-import_cpd = function(path =  "."){
+import_cpd = function(path =  "cpd-records"){
   filename = list.files(path = path, pattern = "*.[yaml|yml]$", recursive = TRUE)
   df = tibble(filename = filename)
 

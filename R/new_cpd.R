@@ -6,9 +6,13 @@
 #' @param title Title for new CPD record
 #' @param type Type of new CPD record, can be one of "work", "professional", "formal", "self" or "other"
 #' @param date The start date of the activity in yyyy-mm-dd format
-#' @param learning_hours The number of learning hours accruded during this activity
+#' @param learning_hours The number of learning hours acruded during this activity
+#' @param path Path to CPD records
+#' @param overwrite Should the YAML be overwritten if it exists - default FALSE
 #' @export
-new_cpd = function(title = "", type = "other", date = today(), learning_hours = 0){
+new_cpd = function(title = "", type = "other", date = today(),
+                   learning_hours = 0, path = "cpd-records",
+                   overwrite = FALSE) {
 
    types = tibble(
     short = c("work", "professional", "formal", "self", "other"),
@@ -21,7 +25,7 @@ new_cpd = function(title = "", type = "other", date = today(), learning_hours = 
 
   start_date = ymd(date)
 
-  blank =
+  new =
     tibble(title = title,
            activity_type = types$long[which(type == types$short)],
            start_date = as.character(start_date),
@@ -34,6 +38,14 @@ new_cpd = function(title = "", type = "other", date = today(), learning_hours = 
            benefit_to_users = "Review needed"
     )
   year = year(start_date)
+  file = glue("{path}/{year}/{start_date}.yaml")
 
-  write_yaml(blank, file = glue("cpd-records/{year}/{start_date}.yaml"))
+  if (file.exists(file)){
+    if(overwrite == TRUE){
+      write_yaml(new, file = file)
+    }
+  stop("File exists. Do you want overwrite = TRUE?")
+  } else {
+  write_yaml(new, file = file)
   }
+}

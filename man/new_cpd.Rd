@@ -4,7 +4,14 @@
 \alias{new_cpd}
 \title{import_cpd}
 \usage{
-new_cpd(title = "", type = "other", date = today(), learning_hours = 0)
+new_cpd(
+  title = "",
+  type = "other",
+  date = today(),
+  learning_hours = 0,
+  path = "cpd-records",
+  overwrite = FALSE
+)
 }
 \arguments{
 \item{title}{Title for new CPD record}
@@ -13,7 +20,11 @@ new_cpd(title = "", type = "other", date = today(), learning_hours = 0)
 
 \item{date}{The start date of the activity in yyyy-mm-dd format}
 
-\item{learning_hours}{The number of learning hours accruded during this activity}
+\item{learning_hours}{The number of learning hours acruded during this activity}
+
+\item{path}{Path to CPD records}
+
+\item{overwrite}{Should the YAML be overwritten if it exists - default FALSE}
 }
 \description{
 import_cpd
