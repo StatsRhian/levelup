@@ -1,7 +1,7 @@
 Type: Package
 Package: levelup
 Title: Create and report on CPD
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: 
     person(given = "Rhian",
            family = "Davies",
