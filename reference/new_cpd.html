@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>yaml_to_tibble — yaml_to_tibble • levelup</title>
+<title>import_cpd — new_cpd • levelup</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="yaml_to_tibble — yaml_to_tibble" />
-<meta property="og:description" content="yaml_to_tibble" />
+<meta property="og:title" content="import_cpd — new_cpd" />
+<meta property="og:description" content="import_cpd" />
 
 
 
@@ -111,29 +111,38 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>yaml_to_tibble</h1>
-    <small class="dont-index">Source: <a href='https://github.com/trianglegirl/levelup/blob/master/R/yaml_to_tibble.R'><code>R/yaml_to_tibble.R</code></a></small>
-    <div class="hidden name"><code>yaml_to_tibble.Rd</code></div>
+    <h1>import_cpd</h1>
+    <small class="dont-index">Source: <a href='https://github.com/trianglegirl/levelup/blob/master/R/new_cpd.R'><code>R/new_cpd.R</code></a></small>
+    <div class="hidden name"><code>new_cpd.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>yaml_to_tibble</p>
+    <p>import_cpd</p>
     </div>
 
-    <pre class="usage"><span class='fu'>yaml_to_tibble</span>(<span class='no'>file</span>)</pre>
+    <pre class="usage"><span class='fu'>new_cpd</span>(<span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"other"</span>, <span class='kw'>date</span> <span class='kw'>=</span> <span class='fu'>today</span>(), <span class='kw'>learning_hours</span> <span class='kw'>=</span> <span class='fl'>0</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>file</th>
-      <td><p>File to be converted</p></td>
+      <th>title</th>
+      <td><p>Title for new CPD record</p></td>
+    </tr>
+    <tr>
+      <th>type</th>
+      <td><p>Type of new CPD record, can be one of "work", "professional", "formal", "self" or "other"</p></td>
+    </tr>
+    <tr>
+      <th>date</th>
+      <td><p>The start date of the activity in yyyy-mm-dd format</p></td>
+    </tr>
+    <tr>
+      <th>learning_hours</th>
+      <td><p>The number of learning hours accruded during this activity</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>a [tibble][tibble::tibble-package]</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
