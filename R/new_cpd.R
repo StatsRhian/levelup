@@ -1,5 +1,5 @@
 #' import_cpd
-#' @importFrom lubridate today ymd
+#' @importFrom lubridate today ymd year
 #' @importFrom tibble tibble
 #' @importFrom yaml write_yaml
 #' @importFrom glue glue
