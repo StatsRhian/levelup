@@ -3,6 +3,7 @@
 #' @importFrom tibble tibble
 #' @importFrom yaml write_yaml
 #' @importFrom glue glue
+#' @importFrom usethis edit_file
 #' @param title Title for new CPD record
 #' @param type Type of new CPD record, can be one of "work", "professional", "formal", "self" or "other"
 #' @param date The start date of the activity in yyyy-mm-dd format
@@ -43,6 +44,7 @@ new_cpd = function(title = "", type = "other", date = today(),
   stop("File exists. Do you want overwrite = TRUE?")
   } else {
   write_yaml(new, file = file)
+  edit_file(file)
   }
 }
 
