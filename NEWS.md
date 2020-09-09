@@ -1,3 +1,6 @@
+# levelup 0.1.4
+* Update `new_cpd()` to automatically open the new record for editing
+
 # levelup 0.1.3
 * Use title in cpd record filename
 
