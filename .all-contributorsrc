@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "trianglegirl",
+      "name": "Rhian Davies",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7017740?v=4",
+      "profile": "http://trianglegirl.rbind.io",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "levelup",
+  "projectOwner": "trianglegirl",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
