@@ -8,3 +8,4 @@
 ^\.httr-oauth$
 ^pkg-thoughts.md$
 ^.all-contributorsrc$
+^codecov\.yml$
