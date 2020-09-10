@@ -7,6 +7,7 @@
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis build status](https://travis-ci.com/trianglegirl/levelup.svg?branch=master)](https://travis-ci.com/trianglegirl/levelup)
+[![Codecov test coverage](https://codecov.io/gh/trianglegirl/levelup/branch/master/graph/badge.svg)](https://codecov.io/gh/trianglegirl/levelup?branch=master)
 <!-- badges: end -->
 
 The goal of levelup is to read in specific yaml files and convert them to tibbles for analysis of CPD data.
