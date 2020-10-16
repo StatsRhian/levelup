@@ -6,8 +6,8 @@ cache: packages
 r: release
  r_packages:
    - pkgdown
- env: R_CURRENT=true
- deploy:
+   
+deploy:
    provider: script
    script:
      R CMD build . && Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE, tarball = ".")'
