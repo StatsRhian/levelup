@@ -6,10 +6,10 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Travis build status](https://travis-ci.com/trianglegirl/levelup.svg?branch=master)](https://travis-ci.com/trianglegirl/levelup)
+[![R build status](https://github.com/trianglegirl/levelup/workflows/R-CMD-check/badge.svg)](https://github.com/trianglegirl/levelup/actions)
 [![Codecov test coverage](https://codecov.io/gh/trianglegirl/levelup/branch/master/graph/badge.svg)](https://codecov.io/gh/trianglegirl/levelup?branch=master)
 [![GitMoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
-<!-- badges: end -->
+!- badges: end -->
 
 The goal of levelup is to read in specific yaml files and convert them to tibbles for analysis of CPD data.
 
