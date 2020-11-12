@@ -1,4 +1,8 @@
-# levelup 0.1.401
+# levelup 0.1.5
+* Use multiline yaml strings in `new_cpd()`
+* New function `export_benefit_report()`
+
+# levelup 0.1.41
 * Add code coverage
 
 # levelup 0.1.4

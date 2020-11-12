@@ -1,7 +1,7 @@
 #' import_cpd
 #' @importFrom lubridate today ymd year
 #' @importFrom tibble tibble
-#' @importFrom yaml write_yaml
+#' @importFrom yaml write_yaml as.yaml
 #' @importFrom glue glue
 #' @importFrom usethis edit_file
 #' @param title Title for new CPD record
@@ -34,9 +34,9 @@ new_cpd = function(title = "", type = "other", date = today(),
            activity_url = '',
            learning_hours = as.character(learning_hours),
            tags = '',
-           activity_description = "Review needed",
-           benefit_to_practice = "Review needed",
-           benefit_to_users = "Review needed"
+           activity_description = as.yaml("Review needed"),
+           benefit_to_practice =  as.yaml("Review needed"),
+           benefit_to_users =  as.yaml("Review needed")
     )
   file = glue("{path}/{year(start_date)}/{start_date}_{title_to_file(title)}.yaml")
 

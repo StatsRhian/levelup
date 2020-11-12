@@ -1,7 +1,7 @@
 Type: Package
 Package: levelup
-Title: Create and report on CPD
-Version: 0.1.401
+Title: Create and report on CPD activities
+Version: 0.1.5
 Authors@R: 
     person(given = "Rhian",
            family = "Davies",
