@@ -13,6 +13,7 @@ License: GPL-3
 URL: https://github.com/trianglegirl/levelup
 BugReports: https://github.com/trianglegirl/levelup/issues
 Imports: 
+    cli,
     dplyr,
     glue,
     lubridate,

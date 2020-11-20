@@ -5,28 +5,31 @@
 #' @importFrom glue glue
 #' @importFrom usethis edit_file
 #' @param title Title for new CPD record
-#' @param type Type of new CPD record, can be one of "work", "professional", "formal", "self" or "other"
+#' @param type Type of new CPD record, can be one of "work", "professional",
+#' "formal", "self" or "other"
 #' @param date The start date of the activity in yyyy-mm-dd format
-#' @param learning_hours The number of learning hours acruded during this activity
+#' @param learning_hours The number of learning hours acruded during this
+#' activity
 #' @param path Path to CPD records
 #' @param overwrite Should the YAML be overwritten if it exists - default FALSE
 #' @export
-new_cpd = function(title = "", type = "other", date = today(),
+new_cpd <- function(title = "", type = "other", date = today(),
                    learning_hours = 0, path = "cpd-records",
                    overwrite = FALSE) {
 
-   types = tibble(
+   types <- tibble(
     short = c("work", "professional", "formal", "self", "other"),
-    long = c("Work based learning", "Professional activity", "Formal / educational", "Self-directed learning", "Other")
+    long = c("Work based learning", "Professional activity",
+             "Formal / educational", "Self-directed learning", "Other")
   )
 
   if (!(type %in% types$short)) {
     stop("Unknown type")
   }
 
-  start_date = ymd(date)
+  start_date <- ymd(date)
 
-  new =
+  new <-
     tibble(title = title,
            activity_type = types$long[which(type == types$short)],
            start_date = as.character(start_date),
@@ -38,7 +41,8 @@ new_cpd = function(title = "", type = "other", date = today(),
            benefit_to_practice =  as.yaml("Review needed"),
            benefit_to_users =  as.yaml("Review needed")
     )
-  file = glue("{path}/{year(start_date)}/{start_date}_{title_to_file(title)}.yaml")
+  file <- glue("{path}/{year(start_date)}/{start_date}_
+               {title_to_file(title)}.yaml")
 
   if (file.exists(file) & overwrite == FALSE) {
   stop("File exists. Do you want overwrite = TRUE?")
@@ -50,11 +54,11 @@ new_cpd = function(title = "", type = "other", date = today(),
 
 
 #' title to file
-#' @import stringr
+#' @importFrom stringr str_squish str_to_lower str_replace_all str_remove_all
 #' @param title Activity title to be tidied
 #' @return Tidy version of activity title
 
-title_to_file = function(title){
+title_to_file <- function(title){
   title %>%
     str_squish() %>%
     str_to_lower() %>%

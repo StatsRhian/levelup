@@ -8,13 +8,17 @@
 #' @param path Path to CPD records
 #' @return a [tibble][tibble::tibble-package]
 #' @export
-import_cpd = function(path =  "cpd-records"){
-  filename = list.files(path = path, pattern = "*.[yaml|yml]$", recursive = TRUE)
-  df = tibble(filename = filename)
+import_cpd <- function(path =  "cpd-records"){
+  filename <- list.files(path = path,
+                         pattern = "*.[yaml|yml]$",
+                         recursive = TRUE)
+  df <- tibble(filename = filename)
 
-  df =
+  df <-
     df %>%
-    mutate(data = purrr::map(.x = filename, ~yaml_to_tibble(file = glue::glue("{path}/{.x}")))) %>%
+    mutate(data = purrr::map(.x = filename,
+                             ~yaml_to_tibble(file =
+                                               glue::glue("{path}/{.x}")))) %>%
     select(-filename) %>%
     unnest(cols = c(.data$data))
   return(df)

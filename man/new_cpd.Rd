@@ -16,11 +16,13 @@ new_cpd(
 \arguments{
 \item{title}{Title for new CPD record}
 
-\item{type}{Type of new CPD record, can be one of "work", "professional", "formal", "self" or "other"}
+\item{type}{Type of new CPD record, can be one of "work", "professional",
+"formal", "self" or "other"}
 
 \item{date}{The start date of the activity in yyyy-mm-dd format}
 
-\item{learning_hours}{The number of learning hours acruded during this activity}
+\item{learning_hours}{The number of learning hours acruded during this
+activity}
 
 \item{path}{Path to CPD records}
 
