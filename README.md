@@ -21,7 +21,7 @@ You can install the released version of levelup with:
 devtools::install_github("trianglegirl/levelup")
 ```
 
-![](https://github.com/trianglegirl/levelup/tree/master/man/figures/bang.jpeg")
+![]("https://github.com/trianglegirl/levelup/tree/master/man/figures/bang.jpeg")
 
 
 ## Contributors ✨
