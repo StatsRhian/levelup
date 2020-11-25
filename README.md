@@ -24,7 +24,7 @@ devtools::install_github("trianglegirl/levelup")
 
 
 
-![]("https://raw.githubusercontent.com/trianglegirl/levelup/master/man/figures/bang.jpeg")
+![Alt]("https://raw.githubusercontent.com/trianglegirl/levelup/master/man/figures/bang.jpeg")
 
 
 ## Contributors ✨
