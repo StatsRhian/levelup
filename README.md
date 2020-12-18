@@ -20,12 +20,6 @@ You can install the released version of levelup with:
 ```r
 devtools::install_github("trianglegirl/levelup")
 ```
-<img src="https://raw.githubusercontent.com/trianglegirl/levelup/master/man/figures/bang.jpeg" alt="Girl in a jacket" width="500" height="600">
-
-
-
-![Alt]("https://raw.githubusercontent.com/trianglegirl/levelup/master/man/figures/bang.jpeg")
-
 
 ## Contributors ✨
 
