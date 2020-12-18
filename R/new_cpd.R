@@ -41,8 +41,7 @@ new_cpd <- function(title = "", type = "other", date = today(),
            benefit_to_practice =  as.yaml("Review needed"),
            benefit_to_users =  as.yaml("Review needed")
     )
-  file <- glue("{path}/{year(start_date)}/{start_date}_
-               {title_to_file(title)}.yaml")
+  file <- glue("{path}/{year(start_date)}/{start_date}_{title_to_file(title)}.yaml") #nolint
 
   if (file.exists(file) & overwrite == FALSE) {
   stop("File exists. Do you want overwrite = TRUE?")
