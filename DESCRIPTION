@@ -6,7 +6,7 @@ Authors@R:
     person(given = "Rhian",
            family = "Davies",
            role = c("aut", "cre"),
-           email = "rhian@jumpingrivers.com")
+           email = "statsrhian@gmail.com")
 Description: Tools for creating, analysing and reporting on CPD
     activities.
 License: GPL-3
